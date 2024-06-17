@@ -86,22 +86,6 @@ loader.load('asset/testModel/untitled.gltf', function (gltf) {
 });
 
 
-//load BLENDER mesh
-const loader3 = new GLTFLoader();
-loader3.load('asset/galleryGLTF/gallerymodel.gltf',function(gltf){
-     blenderModel=gltf.scene;
-    // scene.add(gltf.scene);
-     gltf.scene.scale.set(1,1,1);
-     gltf.scene.position.set(30,-200,magicPosZ);
-     // gltf2.scene.rotation.y=Math.PI /10;
-     console.log(gltf);
-    //   gltf.scene.visible=magicWorld;
- },function(xhr){
-     console.log((xhr.loaded/xhr.total*100)+"%");
- },function(error){
-     console.error('An error occurred:', error);
- 
- });
 
 
  const material = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.5 });
