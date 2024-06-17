@@ -66,7 +66,7 @@ loader2.load('asset/logoModel-PINK/logo copy.gltf', function (gltf) {
 
 //load gallery
  const loader = new GLTFLoader();
-loader.load('asset/gallery_newscan/untitled.gltf', function (gltf) {
+loader.load('asset/untitled.gltf', function (gltf) {
     scanModel=gltf.scene;
     scene.add(gltf.scene);
     gltf.scene.scale.set(100, 100, 100);
